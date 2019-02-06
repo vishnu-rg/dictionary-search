@@ -1,0 +1,24 @@
+
+
+File path of the dictionary needs to be specified in icicle_assignment.rb file line: 10
+
+and the ruby code can be compiled in irb
+
+and to check the output for various phone numbers.
+
+output("9912784734") will generate the output. Please make sure the phone number doesn't have either '1' or '0'
+
+
+To check for the time it takes to produce the output. Refer the following example
+
+Ex: 
+
+start_time = Time.now()
+output = output(phone_number)
+end_time = Time.now()
+
+puts "Time it took to generate: #{end_time - start_time}"
+
+
+
+To run the test cases, go to the folder and run the command(ruby test_cases.rb) This works if the system has ruby installed.
