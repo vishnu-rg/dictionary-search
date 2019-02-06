@@ -23,7 +23,7 @@ $final_data = []
 #step-1: string=668 - call output(6787825)=>(call(7825)=>call(5))
 #if the digits length is less than 3 and if it is not zero, then we should go to next
 #so next in the before loop is
-def output(digits, level = 1)
+def output(digits)
 	combination = []
 	digits = digits.to_s
 	words_with_exact_match = []
@@ -49,7 +49,7 @@ def output(digits, level = 1)
 			result = words_with_exact_match
 			combination += result
 		else
-			result = output(remaining, 2)
+			result = output(remaining)
 			combination += words_with_exact_match.product(result).map(&:flatten)
 		end
 	end
